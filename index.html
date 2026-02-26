@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
 
         <div class="left">
-            <a href="#" class="logo">
-                    <svg
-                        width="25"
-                        height="25"
-                        viewBox="0 0 76 65"
-                        fill="none" xmlns="http://www.w3.org/2000/svg"><path
-                        d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff"/>
-                    </svg>
+            <a href="index.html" class="logo">
+                <svg width="25" height="25" viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
+                </svg>
                 Vercel
             </a>
             <ul class="center">
-            <li><a href="#">Products <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">Resources <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">Solutions <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">Enterprises</a></li>
-            <li><a href="#">Pricing</a></li>
-        </ul>
+                <li><a href="#">Products <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Resources <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Solutions <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Enterprises</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
         </div>
 
         <div class="right">
@@ -36,6 +34,85 @@
             <a href="signIn.html" class="signup">Sign up</a>
         </div>
 
-  </nav>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-bg-glow"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Build and deploy on the AI Cloud.</h1>
+            <p class="hero-subtitle">Vercel provides the developer tools and cloud infrastructure<br>to build, scale,
+                and secure a faster, more personalized web.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">
+                    <svg width="15" height="15" viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="black" />
+                    </svg>
+                    Start Deploying
+                </a>
+                <a href="#" class="btn-secondary">Get a Demo</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="triangle-wrapper">
+                <svg width="300" height="200" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="white" stroke-width="1.5" fill="black">
+
+                        <polygon points="200,20 380,280 20,280" />
+                        <polygon points="200,40 360,260 40,260" />
+                        <polygon points="200,60 340,240 60,240" />
+                        <polygon points="200,80 320,220 80,220" />
+                        <polygon points="200,100 300,200 100,200" />
+                        <polygon points="200,120 280,180 120,180" />
+                        <polygon points="200,140 260,160 140,160" />
+
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <section class="bottom-features">
+        <div class="feature-row develop-row">
+            <h2>Develop with your favorite tools &gt;_ <br>
+                Launch globally, instantly <i class="fa-solid fa-globe"></i> Keep pushing <i
+                    class="fa-solid fa-code-branch" style="transform: rotate(90deg); display: inline-block;"></i></h2>
+        </div>
+
+        <div class="feature-row scale-row">
+            <h2>Scale your <span class="tag"><i class="fa-regular fa-building"></i> Enterprise</span> without
+                compromising <span class="tag"><i class="fa-solid fa-shield-halved"></i> Security</span></h2>
+        </div>
+
+        <div class="feature-row deploy-row">
+            <div class="deploy-left">
+                <h3><strong>Ready to deploy?</strong> <span class="text-gray">Start building with a free account.</span>
+                    <span class="text-gray">Speak to an expert for your</span> <span class="text-blue">Pro</span> <span
+                        class="text-gray">or</span> <span class="text-purple">Enterprise</span> <span
+                        class="text-gray">needs.</span>
+                </h3>
+                <div class="deploy-buttons">
+                    <a href="#" class="btn-primary-white">Start Deploying</a>
+                    <a href="#" class="btn-secondary-dark">Talk to an Expert</a>
+                </div>
+            </div>
+            <div class="deploy-right">
+                <!-- Content for the third column -->
+                <div class="deploy-right-content">
+                    <h4 class="text-gray">
+                        <span>Explore Vercel Enterprise </span>with<br>
+                        an interactive product tour,<br>
+                        trial, or a personalized demo.
+                    </h4>
+
+                    <a href="#" class="enterprise-btn">Explore Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

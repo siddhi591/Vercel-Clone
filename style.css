@@ -1,60 +1,71 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:16px 60px;
-  background:black;
-  color:white;
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
 }
 
-.logo{
-  font-size:22px;
-  font-weight:bold;
-  text-decoration:none;
-  color:white;
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: black;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
   display: flex;
   align-items: flex-end;
 }
+
 .left {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.center{
-  display:flex;
-  list-style:none;
-  gap:30px;
+.center {
+  display: flex;
+  list-style: none;
+  gap: 30px;
   margin-left: 30px;
   align-items: flex-end;
 }
 
-.center a{
-  text-decoration:none;
-  color:#ccc;
-  font-size:13.5px;
-  transition:0.3s;
+.center a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 13.5px;
+  transition: 0.3s;
 }
 
-.center a:hover{
-  color:white;
+.center a:hover {
+  color: white;
 }
 
-.right{
-  display:flex;
-  align-items:center;
-  gap:20px;
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.btn{
-  text-decoration:none;
-  color:#ccc;
-  font-size:13.5px;
+
+.btn {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 13.5px;
   border: 1px solid #ccc;
   padding: 5px;
   width: 80px;
@@ -62,18 +73,321 @@
   border-radius: 6px;
 }
 
-.btn:hover{
-  color:white;
-}
-.signup{
-  text-decoration:none;
-  background:white;
-  color:black;
-  padding:8px 10px;
-  border-radius:6px;
-  transition:0.3s;
+.btn:hover {
+  color: white;
 }
 
-.signup:hover{
-  background:#ddd;
+.signup {
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.signup:hover {
+  background: #ddd;
+}
+
+.hero {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  min-height: calc(100vh - 76px);
+  /* adjusting for navbar height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.hero-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center top;
+  z-index: 1;
+  -webkit-mask-image: radial-gradient(circle at center 30%, black 20%, transparent 80%);
+  mask-image: radial-gradient(circle at center 30%, black 20%, transparent 80%);
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 800px;
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(0, 120, 255, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 40%, rgba(255, 50, 0, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 10%, rgba(0, 255, 120, 0.3) 0%, transparent 50%);
+  z-index: 0;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 21px;
+  color: #a1a1aa;
+  line-height: 1.5;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #eaeaea;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #333;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #1f1f1f;
+  border-color: #555;
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 10;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.triangle-wrapper {
+  position: relative;
+}
+
+.triangle-wrapper svg g {
+  stroke-width: 0.5px;
+}
+
+/* Bottom Features Section */
+.bottom-features {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  background: black;
+  position: relative;
+  z-index: 10;
+}
+
+.feature-row {
+  border-top: 1px solid #222;
+  padding: 55px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* We use an explicit 3 column grid */
+.deploy-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  text-align: left;
+}
+
+/* Explicit vertical lines for the 3 columns */
+.deploy-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 33.33%;
+  width: 1px;
+  background-color: #222;
+  z-index: -1;
+}
+
+.deploy-left {
+  grid-column: span 2;
+  padding: 60px 40px;
+  border-right: 1px solid #222;
+}
+
+.deploy-right {
+  grid-column: span 1;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.deploy-right-content h4 span {
+  color: white;
+}
+
+/* button */
+.enterprise-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.enterprise-btn:hover {
+  border-color: white;
+  background: #111;
+}
+
+.develop-row h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.scale-row h2 {
+  font-size: 26px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.deploy-left h3 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.deploy-left h3 strong {
+  font-weight: 600;
+  /* Keep only 'Ready to deploy' bold */
+}
+
+.text-gray {
+  color: #a1a1aa;
+}
+
+.text-blue {
+  color: #3b82f6;
+}
+
+.text-purple {
+  color: #a855f7;
+}
+
+.deploy-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary-white {
+  background: white;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.btn-primary-white:hover {
+  background: #eaeaea;
+}
+
+.btn-secondary-dark {
+  background: #0a0a0a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid #333;
+  transition: 0.2s;
+}
+
+.btn-secondary-dark:hover {
+  background: #1f1f1f;
+  border-color: #555;
 }
