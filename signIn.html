@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <svg
+                width="25"
+                height="25"
+                viewBox="0 0 76 65"
+                fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff"/>
+            </svg>
+        </div>
+        <div class="right">
+            <a href="login.html" class="login">Log In</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Your first deploy <br>is just a sign-up away.</h1>
+        <p>Plan Type</p>
+        <div class="plan-container" id="box1">
+            <input type="radio" name="plan" id="pro">
+            <label for="pro">I'm working on a commercial project</label>
+            <span id="pro">Pro</span>
+        </div>
+        <div class="plan-container" id="box2">
+            <input type="radio" name="plan" id="hobby">
+            <label for="hobby">I'm working on a personal project</label>
+            <span id="hobby">Hobby</span>
+        </div>
+        <p class="teamName">Team Name</p>
+        <input type="text" placeholder="Team Name" class="teamName" id="team">
+        <button class="primary-btn">Continue</button>
+        <div class="agreement">By joining, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></div>
+        <div class="askAi">
+            <p>Have a complex company use case? 
+                Get Enterprise grade assistance <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    border-bottom:1px solid #222;
+}
+
+.login{
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #333;
+    padding:8px 16px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.container{
+    width:500px;
+    background:#0a0a0a;
+    padding:40px;
+    border-radius:14px;
+    border:1px solid #222;
+}
+
+.container h1{
+    font-size:28px;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.container p{
+    color:#aaa;
+    font-size:14px;
+    margin:15px 0 8px;
+}
+
+.plan-container{
+    display:flex;
+    font-size: 13.5px;
+    color: #ccc;
+    justify-content: space-around;
+    text-align: left;
+    border:1px solid #333;
+    padding:10px;
+    cursor:pointer;
+}
+.plan-container input{
+    opacity: 0.5;
+}
+.plan-container input:checked{
+    opacity: 1;
+}
+.plan-container:hover{
+    border:1px solid #555;
+}
+
+#box1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#box2 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#pro {
+    background-color: rgb(78, 78, 218);
+}
+.plan-container span{
+    background:#1f1f1f;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    color:#ccc;
+}
+
+.team{
+    width:100%;
+    padding:14px;
+    background:#111;
+    border:1px solid #333;
+    border-radius:8px;
+    color:#fff;
+    margin-bottom:20px;
+}
+.teamName{
+    display: none;
+}
+/* button */
+.primary-btn{
+    width:100%;
+    padding:14px;
+    background:#1a1a1a;
+    border:none;
+    border-radius:8px;
+    color:#888;
+    font-size:16px;
+    margin-top:10px;
+}
+
+/* agreement */
+.agreement{
+    text-align:center;
+    font-size:12px;
+    color:#888;
+    margin-top:20px;
+}
+
+.agreement a{
+    color:#ccc;
+    text-decoration:none;
+}
+
+/* bottom purple box */
+.askAi{
+    background:#2d123f;
+    margin-top:25px;
+    padding:14px;
+    text-align:center;
+    font-size:14px;
+    color:#d6a8ff;
+}
+
+.askAi a{
+    color: #fff;
+    margin-left:8px;
+}
