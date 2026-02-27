@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -20,9 +21,15 @@
                 Vercel
             </a>
             <ul class="center">
-                <li><a href="#">Products <i class="fa-solid fa-angle-down"></i></a></li>
-                <li><a href="#">Resources <i class="fa-solid fa-angle-down"></i></a></li>
-                <li><a href="#">Solutions <i class="fa-solid fa-angle-down"></i></a></li>
+                <li class="nav-link" data-menu="products">
+                    <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li class="nav-link" data-menu="resources">
+                    <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li class="nav-link" data-menu="solutions">
+                    <a href="#">Solutions <i class="fa-solid fa-angle-down"></i></a>
+                </li>
                 <li><a href="#">Enterprises</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
@@ -33,7 +40,10 @@
             <a href="#" class="btn">Ask AI</a>
             <a href="signIn.html" class="signup">Sign up</a>
         </div>
-
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mega-menu" id="megaMenu"></div>
     </nav>
 
     <main class="hero">
@@ -112,7 +122,108 @@
             </div>
         </div>
     </section>
+    <section class="footer-links">
+        <div class="footer-grid">
 
+            <div class="footer-column">
+                <h5>GET STARTED</h5>
+                <ul>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Supported frameworks</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Domains</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>BUILD</h5>
+                <ul>
+                    <li><a href="#">Next.js on Vercel</a></li>
+                    <li><a href="#">Turborepo</a></li>
+                    <li><a href="#">v0</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>SCALE</h5>
+                <ul>
+                    <li><a href="#">Content delivery network</a></li>
+                    <li><a href="#">Fluid compute</a></li>
+                    <li><a href="#">CI/CD</a></li>
+                    <li><a href="#">Observability</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>SECURE</h5>
+                <ul>
+                    <li><a href="#">Platform security</a></li>
+                    <li><a href="#">Web Application Firewall</a></li>
+                    <li><a href="#">Bot management</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>RESOURCES</h5>
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Startups</a></li>
+                </ul>
+            </div>
+
+            <!-- SECOND ROW -->
+
+            <div class="footer-column">
+                <h5>FRAMEWORKS</h5>
+                <ul>
+                    <li><a href="#">Next.js</a></li>
+                    <li><a href="#">Nuxt</a></li>
+                    <li><a href="#">Svelte</a></li>
+                    <li><a href="#">Turbo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>SDKS</h5>
+                <ul>
+                    <li><a href="#">AI SDK</a></li>
+                    <li><a href="#">Workflow DevKit</a></li>
+                    <li><a href="#">Chat SDK</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>USE CASES</h5>
+                <ul>
+                    <li><a href="#">Composable commerce</a></li>
+                    <li><a href="#">Web apps</a></li>
+                    <li><a href="#">Marketing sites</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>COMPANY</h5>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>COMMUNITY</h5>
+                <ul>
+                    <li><a href="#">Open source program</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

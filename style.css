@@ -12,9 +12,9 @@ body {
 }
 
 .navbar {
-  position: sticky;
+  position: relative;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -390,4 +390,169 @@ body {
 .btn-secondary-dark:hover {
   background: #1f1f1f;
   border-color: #555;
+}
+
+/* NAV LINKS */
+.nav-link {
+  cursor: pointer;
+}
+
+/* MEGA MENU */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(15px);
+
+  width: 800px;
+  padding: 2rem 2.5rem;
+
+  background: #0f0f0f;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+/* SHOW MENU */
+.mega-menu.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* COLUMN TITLE */
+.menu-column h4 {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* MENU ITEM */
+.menu-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.menu-item:hover .icon-box {
+  background: #1c1c1c;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+
+.item-text .title {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item-text .desc {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer-links {
+  padding: 4rem 6%;
+  background: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.5rem 2.5rem;
+}
+
+.footer-column h5 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-column a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #aaa;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+.center {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+
+  .center {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #000;
+
+    flex-direction: column;
+    padding: 2rem 5%;
+
+    display: none;
+  }
+
+  .center.active {
+    display: flex;
+  }
+
 }
